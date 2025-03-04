@@ -5,53 +5,137 @@
 .header, 
 .navy-container,
 .white-container,
-.blue-container {
+.blue-container,
+.gray-container,
+.footer {
+    margin: -10px;
+}
+
+.header,
+.navy-container,
+.white-container,
+.blue-container,
+.gray-container {   
     padding: 10px 300px;
 }
 
-.header {
-    background-color: #1F2937;
-    display: flex;
-    justify-content: space-between;
+.header, 
+.navy-container,
+.white-container,
+.gray-container,
+.blue-container,
+.box-and-text {
     align-items: center;
-    margin: 0;
+}
+
+.header, 
+.navy-container,
+.footer {
+    background-color: #1F2937;
+}
+
+.header,
+.header ul,
+.navy-container,
+.white-container,
+.white-images,
+.box-and-text,
+.blue-container
+{
+    display: flex;
+}
+
+.header,
+.blue-container
+ {
+    justify-content: space-between;
 }
 
 .logo {
     font-size: 24px;
-    color: #F9FAF8;
     font-weight: bold;
 }
 
 .header a,
 .navy-message p,
-.navy-message button {
+.navy-message button,
+.blue-container button {
     font-size: 18px;
+}
+
+.logo,
+.header a,
+.navy-message h1,
+.navy-message p,
+.navy-message button,
+.blue-message,
+.blue-container button,
+.footer {
     color: #F9FAF8;
 }
 
-.header h1,
-header a {
-    
+.navy-message button,
+.blue-container,
+.blue-container button {
+    background-color: #3882F6;
+}
+
+.navy-container,
+.white-images {
+    justify-content: center;
 }
 
 .header ul {
     list-style: none;
-    display: flex;
     gap: 16px;
 }
+
+.white-container h1,
+.box-and-text,
+.footer {
+   text-align: center;
+ }
+
+ .navy-message button,
+ .blue-container button {
+    cursor: pointer;
+ }
+
+ .white-container,
+ .box-and-text {
+    flex-direction: column;
+ }
+
+.gray-container p,
+.blue-message h1,
+.blue-container button {
+    font-weight: bold;
+ }
+
+.box-and-text,
+.footer {
+    font-size: 12px;
+ }
+
+ .blue-box,
+ .blue-container button {
+    border-style: solid;
+ }
+
+.blue-box,
+.blue-container button,
+.blue-container
+{
+    border-radius: 5px;
+ }
 
 .header a {
     text-decoration: none;
 }
 
 .navy-container {
-    background-color: #1F2937;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-bottom: 24px;
-    gap: 16px;
+    gap: 36px;
 }
 
 .navy-message {
@@ -66,64 +150,80 @@ header a {
 
 .navy-message h1 {
     font-size: 48px;
-    color: #F9FAF8;
     font-weight: 900;
+    margin-bottom: -5px;
 }
 
 .navy-message button {
-    background-color: #3882F6;
     border: none;
     border-radius: 5px;
     padding: .5em 2em;
-    cursor: pointer;
  }
 
- .white-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+ .white.container h1,
+ blockquote,
+ .box-and-text {
+    color: #1F2937;
  }
 
  .white-container h1{
-    color: #1F2937;
-    font-size: 36px;
     font-weight: 900;
-    text-align: center;
+ }
+
+ .white-container h1,
+ blockquote {
+    font-size: 36px;
  }
 
  .white-images {
-    display: flex;
-    justify-content: center;
-    padding: 0 450px;
-    gap: 16px;
+    padding: 0 200px;
  }
 
 .box-and-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: #1F2937;
-    font-size: 12px;
+    padding: 20px;
+    gap: 10px;
 }
 
  .blue-box {
     height: 100px;
     width: 100px;
-    border: 3px;
-    border-style: solid;
     border-color: #3882F6;
-    border-radius: 5px;
  }
 
  .gray-container {
     background-color: #E5E7EB;
  }
 
- blockquote {
-    color: #1F2937;
-    font-size: 36px;
+blockquote {
     font-weight: lighter;
     font-style: italic;
+    padding: 25px 25px 0px 25px;
  }
 
+.gray-container p {
+    text-align: right;
+    padding-right: 48px;
+}
+
+.blue-container {
+    padding: 36px 100px;
+    margin: 150px 250px;
+}
+
+.blue-message {
+    font-size: 18px;
+}
+
+.blue-message h1 {
+    font-size: 24px;
+    margin-bottom: -5px;
+}
+
+.blue-container button {
+    border-color: #E5E7EB;
+    padding: 8px 24px;
+}
+
+.footer {
+    padding: 48px;
+}
